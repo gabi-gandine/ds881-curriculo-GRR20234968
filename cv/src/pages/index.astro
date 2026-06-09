@@ -1,0 +1,340 @@
+---
+// src/pages/index.astro
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Gabriela Morais Gandine - CV">
+  <div class="cv-container">
+
+	<header class="header">
+      <h1>Gabriela Morais Gandine</h1>
+      <div class="contact-info">
+        <a href="tel:+5541995355852"> (41) 99535-5852</a>
+        <a href="mailto:gabriela.gandine@gmail.com"> gabriela.gandine@gmail.com</a>
+        <a href="https://github.com/gabi-gandine" target="_blank"> GitHub: @gabi-gandine</a>
+      </div>
+    </header>
+
+    <section class="section">
+      <h2>Experience</h2>
+      
+      <div class="experience-item">
+        <div class="experience-header">
+          <h3>Mapas Culturais - Front-end Web Development</h3>
+          <span class="date">4 months</span>
+        </div>
+        <p class="company">UFPR + Ministry of Culture</p>
+        <p>A university extension project focused on formulating, monitoring and evaluating cultural policies in Paraná, making information available online.</p>
+        <p><strong>Tech stack:</strong> PHP, JavaScript</p>
+        <ul>
+          <li>Code debugging</li>
+          <li>Programming new features</li>
+          <li>Improving design to enhance user experience (UX)</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="experience-header">
+          <h3>PRIME Laboratory - Research Internship</h3>
+          <span class="date">4 months</span>
+        </div>
+        <p class="company">Université de Moncton, Canada | Emerging Leaders of America Program (ELAP)</p>
+        <p>AI research for pool safety management using security camera image recognition.</p>
+        <p><strong>Tech stack:</strong> Python, Bash, YOLO v7/v8/v11</p>
+      </div>
+
+      <div class="experience-item">
+        <div class="experience-header">
+          <h3>4kst - Fullstack Development Internship</h3>
+          <span class="date">August 2025 – present</span>
+        </div>
+        <p class="company">AI Startup</p>
+        <ul>
+          <li>Developing new features for company application</li>
+          <li>Creating internal components library</li>
+          <li>Modeling and defining entities and database relationships</li>
+        </ul>
+        <p><strong>Tech stack:</strong> React, Express, TypeScript</p>
+      </div>
+    </section>
+
+
+	<section class="section">
+      <h2>Education</h2>
+      
+      <div class="education-item">
+        <div class="education-header">
+          <h3>Universidade Federal do Paraná (UFPR)</h3>
+          <span class="date">In progress (6th period)</span>
+        </div>
+        <p>Systems Analysis and Development</p>
+      </div>
+
+      <div class="education-item">
+        <div class="education-header">
+          <h3>Federal Institute of Paraná (IFPR)</h3>
+          <span class="date">2020 - 2022</span>
+        </div>
+        <p>Computer Technologist Integrated into High School</p>
+      </div>
+    </section>
+
+	<section class="section">
+      <h2>Courses</h2>
+      <ul class="courses-list">
+        <li>IA + Flutter – 2023 – DevFest Curitiba</li>
+        <li>Introduction to Artificial Intelligence and Society (Webinar) – 2023 – SBPC</li>
+        <li>React Mini-course – 2023 – TADS Academic Week</li>
+        <li>Introduction to Cybersecurity – 2026 – Cisco Networking Academy</li>
+        <li>Fundaments of Networking – 2026 – Cisco Networking Academy</li>
+      </ul>
+    </section>
+
+    <div class="two-columns">
+      <section class="section">
+        <h2>Technologies</h2>
+        <div class="tech-tags">
+          <span>Java</span> <span>Python</span> <span>ShellScript</span>
+          <span>PHP</span> <span>PostgreSQL</span> <span>MySQL</span>
+          <span>C</span> <span>Oracle</span> <span>JavaScript</span>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Languages</h2>
+        <ul class="languages-list">
+          <li><strong>Portuguese:</strong> Native</li>
+          <li><strong>English:</strong> Fluent (reading, writing, speaking)</li>
+          <li><strong>Chinese:</strong> Basic (reading, writing, speaking)</li>
+          <li><strong>French:</strong> Basic (reading, speaking)</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <style>
+    :root {
+      --primary: #2c3e66;
+      --secondary: #5b7ba3;
+      --accent: #e67e22;
+      --bg: #f8f9fa;
+      --card-bg: #ffffff;
+      --text: #2d3436;
+      --text-light: #636e72;
+      --border: #e1e8ed;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    .cv-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: var(--card-bg);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    }
+
+    .header {
+      text-align: center;
+      border-bottom: 3px solid var(--accent);
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+      letter-spacing: -0.5px;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .contact-info a {
+      color: var(--secondary);
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .contact-info a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    /* Sections */
+    .section {
+      margin-bottom: 2rem;
+    }
+
+    .section h2 {
+      font-size: 1.5rem;
+      color: var(--primary);
+      border-left: 4px solid var(--accent);
+      padding-left: 1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    /* Experience & Education items */
+    .experience-item, .education-item {
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .experience-item:last-child, .education-item:last-child {
+      border-bottom: none;
+    }
+
+    .experience-header, .education-header {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: baseline;
+      margin-bottom: 0.5rem;
+    }
+
+    .experience-header h3, .education-header h3 {
+      font-size: 1.2rem;
+      color: var(--primary);
+    }
+
+    .date {
+      color: var(--text-light);
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    .company {
+      color: var(--secondary);
+      font-weight: 500;
+      margin-bottom: 0.75rem;
+      font-size: 0.9rem;
+    }
+
+    .experience-item p, .education-item p {
+      margin-bottom: 0.5rem;
+    }
+
+    .experience-item ul {
+      margin-top: 0.5rem;
+      padding-left: 1.5rem;
+    }
+
+    .experience-item li {
+      margin-bottom: 0.25rem;
+    }
+
+    .courses-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .courses-list li {
+      margin-bottom: 0.5rem;
+      padding-left: 1.25rem;
+      position: relative;
+    }
+
+    .courses-list li::before {
+      content: "▹";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+    }
+
+    .two-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .tech-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    .tech-tags span {
+      background-color: var(--bg);
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--primary);
+      border: 1px solid var(--border);
+    }
+
+    .languages-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .languages-list li {
+      margin-bottom: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .cv-container {
+        padding: 1rem;
+      }
+      
+      .header h1 {
+        font-size: 1.8rem;
+      }
+      
+      .contact-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      
+      .two-columns {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+      
+      .experience-header, .education-header {
+        flex-direction: column;
+      }
+      
+      .date {
+        margin-top: 0.25rem;
+      }
+    }
+
+    @media print {
+      body {
+        background: white;
+      }
+      .cv-container {
+        box-shadow: none;
+        padding: 0;
+      }
+      .contact-info a {
+        color: black;
+        text-decoration: none;
+      }
+      .tech-tags span {
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+      }
+    }
+  </style>
+</Layout>
