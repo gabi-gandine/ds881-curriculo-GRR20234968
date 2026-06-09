@@ -1,0 +1,8 @@
+node_modules/
+cv/package-lock.json
+
+dist/
+cv/.astro/
+
+.env
+.env.local
