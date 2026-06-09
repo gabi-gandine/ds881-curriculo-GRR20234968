@@ -1,11 +1,115 @@
 ---
-import Welcome from '../components/Welcome.astro';
+// src/pages/index.astro
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Gabriela Morais Gandine - CV">
+  <div>
+
+	<header class="header">
+      <h1>Gabriela Morais Gandine</h1>
+      <div class="contact-info">
+        <a href="tel:+5541995355852"> (41) 99535-5852</a>
+        <a href="mailto:gabriela.gandine@gmail.com"> gabriela.gandine@gmail.com</a>
+        <a href="https://github.com/gabi-gandine" target="_blank"> GitHub: @gabi-gandine</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Experience</h2>
+      
+      <div>
+        <div>
+          <h3>Mapas Culturais - Front-end Web Development</h3>
+          <span>4 months</span>
+        </div>
+        <p>UFPR + Ministry of Culture</p>
+        <p>A university extension project focused on formulating, monitoring and evaluating cultural policies in Paraná, making information available online.</p>
+        <p><strong>Tech stack:</strong> PHP, JavaScript</p>
+        <ul>
+          <li>Code debugging</li>
+          <li>Programming new features</li>
+          <li>Improving design to enhance user experience (UX)</li>
+        </ul>
+      </div>
+
+      <div>
+        <div>
+          <h3>PRIME Laboratory - Research Internship</h3>
+          <span>4 months</span>
+        </div>
+        <p>Université de Moncton, Canada | Emerging Leaders of America Program (ELAP)</p>
+        <p>AI research for pool safety management using security camera image recognition.</p>
+        <p><strong>Tech stack:</strong> Python, Bash, YOLO v7/v8/v11</p>
+      </div>
+
+      <div>
+        <div>
+          <h3>4kst - Fullstack Development Internship</h3>
+          <span>August 2025 – present</span>
+        </div>
+        <p>AI Startup</p>
+        <ul>
+          <li>Developing new features for company application</li>
+          <li>Creating internal components library</li>
+          <li>Modeling and defining entities and database relationships</li>
+        </ul>
+        <p><strong>Tech stack:</strong> React, Express, TypeScript</p>
+      </div>
+    </section>
+
+
+	<section>
+      <h2>Education</h2>
+      
+      <div>
+        <div>
+          <h3>Universidade Federal do Paraná (UFPR)</h3>
+          <span>In progress (6th period)</span>
+        </div>
+        <p>Systems Analysis and Development</p>
+      </div>
+
+      <div>
+        <div>
+          <h3>Federal Institute of Paraná (IFPR)</h3>
+          <span>2020 - 2022</span>
+        </div>
+        <p>Computer Technologist Integrated into High School</p>
+      </div>
+    </section>
+
+	<section>
+      <h2>Courses</h2>
+      <ul>
+        <li>IA + Flutter – 2023 – DevFest Curitiba</li>
+        <li>Introduction to Artificial Intelligence and Society (Webinar) – 2023 – SBPC</li>
+        <li>React Mini-course – 2023 – TADS Academic Week</li>
+        <li>Introduction to Cybersecurity – 2026 – Cisco Networking Academy</li>
+        <li>Fundaments of Networking – 2026 – Cisco Networking Academy</li>
+      </ul>
+    </section>
+
+    <div>
+      <section>
+        <h2>Technologies</h2>
+        <div>
+          <span>Java</span> <span>Python</span> <span>ShellScript</span>
+          <span>PHP</span> <span>PostgreSQL</span> <span>MySQL</span>
+          <span>C</span> <span>Oracle</span> <span>JavaScript</span>
+        </div>
+      </section>
+
+      <section>
+        <h2>Languages</h2>
+        <ul>
+          <li><strong>Portuguese:</strong> Native</li>
+          <li><strong>English:</strong> Fluent (reading, writing, speaking)</li>
+          <li><strong>Chinese:</strong> Basic (reading, writing, speaking)</li>
+          <li><strong>French:</strong> Basic (reading, speaking)</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
 </Layout>
