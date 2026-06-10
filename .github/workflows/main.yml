@@ -3,13 +3,20 @@ name: CI/CD Pipeline
 on:
   pull_request:
     branches: [main]
+    paths:
+      - 'cv/**' 
   push:
     branches: [main]
+    paths:
+      - 'cv/**' 
 
 jobs:
   lint-and-build:
     name: Linter & Build
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./cv
 
     steps:
       - name: Checkout code
@@ -20,13 +27,17 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
+          cache-dependency-path: cv/package-lock.json
 
       - name: Install dependencies
         run: npm ci
+        working-directory: ./cv
 
       - name: Run Linter
         run: npm run lint
+        working-directory: ./cv
 
       - name: Build Project
         run: npm run build
-        
+        working-directory: ./cv
+
