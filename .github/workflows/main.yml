@@ -3,13 +3,20 @@ name: CI/CD Pipeline
 on:
   pull_request:
     branches: [main]
+    paths:
+      - 'cv/**' 
   push:
     branches: [main]
+    paths:
+      - 'cv/**' 
 
 jobs:
   lint-and-build:
     name: Linter & Build
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./cv
 
     steps:
       - name: Checkout code
@@ -29,3 +36,4 @@ jobs:
 
       - name: Build Project
         run: npm run build
+        
